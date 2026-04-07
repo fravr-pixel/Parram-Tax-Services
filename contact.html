@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Parram Tax</title>
+  <link rel="stylesheet" href="1stylem.css">
+
+  <!-- EmailJS script -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      // 🔁 Replace this with your actual EmailJS Public Key
+      emailjs.init("gMeYgal8rhncCqGGw"); 
+    })();
+  </script>
+</head>
+<body>
+
+  <header>
+    <br><br>
+    <h1>Contact Parram Tax</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Abt.html">About</a>
+      <a href="services.html">Services</a>
+      
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <br><br>
+    <h2 style="padding-top: 5%;margin-left:10px;">Get in Touch</h2>
+    <p style="margin-left: 10px;">If you have any questions or need assistance, feel free to contact us.</p>
+
+    <h3 style="margin-left:10px;">Contact Information</h3>
+    <p style="margin-left:10px;">Email: <a href="mailto:camuktha@hotmail.com"><button type="button" class="email">camuktha@hotmail.com</button></a></p>
+    <p style="margin-left:10px;">Phone: <a href="tel:+61478169303"><button type="button" class="email">+61 478169303</button></a></p>
+
+    <!-- 💬 Contact Form -->
+    <form id="contact-form" class="form">
+    <h2>Send Us a Message</h2>
+    <input class="input" type="text" name="from_name" placeholder="Your Name" required><br>
+    <input class="input" type="email" name="reply_to" placeholder="Your Email" required><br>
+    <input class="input" type="tel" name="phone" placeholder="Your Phone Number" required><br>
+
+    <textarea class="textarea" name="message" placeholder="Enter your message here..." required></textarea>
+    <br><br>
+    <button type="submit" class="submit">Submit</button>
+      <br><br>
+  </form>
+
+  <!-- Image moved here, below the form, with better styling -->
+  <div class="contact-image">
+    <img src="IMG_5095.jpg" alt="Parramatta" style="width:50%; border-radius: 8px;">
+  </div>
+    <!-- ✅ Feedback Message -->
+    <p id="success-message" style="color: lime; text-align: center; margin-top: 15px;"></p>
+  </main>
+  
+  <footer style="margin-top: 20%;">
+            <img src ="landscape_black_26346204.jpg" alt="requirement" style="width:10%; display:block; margin-bottom:-5%; margin-left:10%;">
+            <p>&copy; 2026 Parram Tax Services</p>
+            <p style="padding-bottom:10px;text-align:center;">Developed by Abhay Vikram Rao</p>
+        </footer>
+
+  <!-- JavaScript for sending the form -->
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // 🔁 Replace these with your actual Service ID and Template ID from EmailJS
+      emailjs.sendForm("service_xb6tmzi", "template_79ltbmt", this)
+        .then(function() {
+          document.getElementById("success-message").textContent = "✅ Message sent successfully!";
+          document.getElementById("contact-form").reset();
+        }, function(error) {
+          document.getElementById("success-message").textContent = "❌ Failed to send. Error: " + JSON.stringify(error);
+        });
+    });
+  </script>
+
+</body>
+</html>

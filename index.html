@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parram Tax - Chartered Accountants</title>
+  <link rel="stylesheet" href="1stylem.css">
+
+</head>
+<body>
+  <header  style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+    <br><br>
+    <h1 style="text-align:centre;">Parram Tax Services</h1>
+    <a href="tel:+61478169303" class="CALLRN">📞Call us at +61 478 169 303</a>
+
+    <nav style="margin-top: -20px;">
+      <a href="index.html">Home</a>
+      <a href="Abt.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+  <!-- Hero Section with Blurred Background -->
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Parram Tax Services</h2>
+      
+      <div class="button-container">
+        <button class="service-button">ACCOUNTING AND TAX</button>
+        <button class="service-button">BOOK KEEPING</button>
+        <button class="service-button">BUSINESS BUILDING</button>
+        <button class="service-button">TAXATION</button>
+      </div>
+
+      <p class="tagline">Trusted Accountants for Individuals and Businesses.</p>
+      <p>We provide a wide range of services to help you manage your finances effectively.</p>
+      <p>Experts in Accounting, Tax, Governance, Compliance for businesses</p>
+
+      <a href="contact.html">
+        <button class="start">Make an Enquiry!</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Rest of your content below the hero -->
+  <div class="content-section">
+    <p style="font-weight:bold; text-align:center; max-width: 900px; margin: 40px auto;">
+      We provide a comprehensive range of accounting and financial services...
+    </p>
+    
+    <img style="display: block; margin: 40px auto; width: 40%;" src="QK67I.jpg" alt="">
+
+    <a href="contact.html">
+      <button class="contact-us">Contact Us</button>
+    </a>
+  </div>
+</main>
+  <footer style="margin-top: 20%;">
+            <img src ="landscape_black_26346204.jpg" alt="requirement" style="width:15%; display:block; margin-bottom:-5%; margin-left:10%;">
+            <p>&copy; 2026 Parram Tax Services</p>
+            <p style="padding-bottom:10px;text-align:center;">Developed by Abhay Vikram Rao</p>
+        </footer>
+  <script>
+    window.addEventListener('scroll', function() {
+      const button = document.querySelector('.start');
+      const rect = button.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (rect.top < windowHeight && rect.bottom > 0) {
+        button.classList.add('fade-in');
+      }
+    });
+  </script>
+</body>
+</html>

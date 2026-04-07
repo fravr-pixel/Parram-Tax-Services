@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(15, 0, 71);
+  font-family:'Times New Roman', Times, serif;
+}
+
+header {
+  background-color: rgb(255, 187, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  position:fixed;
+  margin-top: -35px;
+  width: 100%;
+}
+
+nav a{
+  color: rgb(15, 0, 71);
+  margin: 0px 15px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2{
+  font-family:Josefin Sans, sans-serif;
+  font-size: 40px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: #ffaa00;
+
+}
+
+.form{
+  padding-left:20px;
+}
+
+.input{
+  width: 20%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.service-button {
+  flex-wrap: wrap;
+  gap: 12px;
+  width:200px;
+  height: 50px;
+  border:none;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right:20px;
+}
+
+.service-button:hover {
+  background-color:  rgb(255, 187, 0);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 8px rgba(0, 51, 102, 0.3);
+}
+
+.start{
+  background-color:  rgb(255, 187, 0);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border:  rgb(255, 187, 0) solid 2px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  
+}
+.start.fade-in {
+  opacity: 1;
+}
+.start:hover {
+  background-color: white;
+  color:  rgb(255, 187, 0);
+  border:black solid 2px;
+  border-color:  rgb(255, 187, 0);
+  cursor: pointer;
+}
+
+/* Hero Background with Blur */
+.hero {
+  position: relative;
+  height: 100vh;                    /* Full screen height */
+  min-height: 700px;                /* Minimum height on smaller screens */
+  background-image: url('OIP.jpg');
+  background-size: cover;           /* This fixes the "only part shows" issue */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Blur layer */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;              /* Uses the same image */
+  filter: blur(8px);                /* Change number for more/less blur (e.g. 12px) */
+  z-index: 1;
+}
+
+/* Dark overlay so text is readable */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);   /* Dark tint - adjust opacity */
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;                       /* Text stays sharp */
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.tagline {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Make sure your existing buttons look good on dark background */
+.service-button {
+  background-color: rgba(255,255,255,0.15);
+  color: white;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+.service-button:hover {
+  background-color:  rgb(255, 187, 0);
+
+}
+.contact-us{
+  background-color: rgb(255, 187, 0);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 20px auto;
+  border: rgb(255, 187, 0) solid 2px;
+  transition: all 0.2s;
+  display: block;
+}
+
+a:has(.contact-us) {
+  text-decoration: none;
+}
+a:has(.start) {
+  text-decoration: none;
+}
+.contact-us:hover {
+  background-color: white;
+  color:  rgb(255, 187, 0);
+  border: rgb(255, 187, 0) solid 2px;
+  cursor: pointer;
+}
+.email{
+  background-color: rgb(255, 187, 0);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border: rgb(255, 187, 0) solid 2px;
+  transition: all 0.2s;
+}
+.textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 30%;
+  padding: 8px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #696969b0;
+  border-bottom: 1px solid #9e9d9d;
+  outline: none;
+  background-color: transparent;
+  color: #00aeff;
+}
+
+.textarea::placeholder {
+  color: #6e6e6e;
+}
+
+.textarea:focus {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+.submit {
+  background-color: rgb(255, 187, 0);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border: rgb(255, 187, 0) solid 2px;
+  transition: all 0.2s;
+}
+.submit:hover {
+  background-color: white;
+  color:  rgb(255, 187, 0);
+  border: rgb(255, 187, 0) solid 2px;
+  cursor: pointer;
+}
+.submit:active {
+  background-color: rgb(255, 187, 0);
+  color: white;
+  border: rgb(255, 187, 0) solid 2px;
+  transform: scale(0.98);
+}
+
+.CALLRN {
+  background-color: rgb(255, 187, 0);
+  color: white;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-left:-75%;
+  transition: all 0.2s;
+  font-weight: bold;
+}
+.CALLRN:hover {
+  background-color: white;
+  color:  rgb(255, 187, 0);
+  border: rgb(255, 187, 0) solid 2px;
+  cursor: pointer;
+}
+
+/* -----------------------------------------------------------*/
+
+.contact-image {
+  display: flex;
+  object-fit: cover;       /* Keeps the image looking good without stretching badly */
+  border-radius: 16px;
+  margin-top: -35%;
+  margin-left:50%;
+}
+
+.email:hover {
+  background-color: white;
+  color:  rgb(255, 187, 0);
+  border: rgb(255, 187, 0) solid 2px;
+  cursor: pointer;
+}
+
+.email:active {
+  background-color: rgb(255, 187, 0);
+  color: white;
+  border: rgb(255, 187, 0) solid 2px;
+  transform: scale(0.98);
+}
+
+.form{
+  margin-left:20px;
+  border:black solid 2px;
+  margin-right:60%;
+}
+.input {
+
+  background-color: rgb(255, 187, 0);
+}
+.textarea {
+  background-color: rgb(255, 187, 0);
+}
+
+.input:focus, .textarea:focus {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border-color: rgb(255, 187, 0);
+  box-shadow: 0 0 10px rgb(255, 187, 0);
+}
