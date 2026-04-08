@@ -309,8 +309,9 @@ a:has(.start) {
   margin-right:60%;
 }
 .input {
-  width:40%;
+  color: black;
   background-color: rgb(255, 187, 0);
+  width: 40%;
 }
 .textarea {
   background-color: rgb(255, 187, 0);
