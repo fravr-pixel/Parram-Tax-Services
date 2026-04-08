@@ -318,7 +318,7 @@ a:has(.start) {
 
 .input:focus, .textarea:focus {
   background-color: rgb(255, 255, 255);
-  color: white;
+  color: black;
   border-color: rgb(255, 187, 0);
   box-shadow: 0 0 10px rgb(255, 187, 0);
 }
