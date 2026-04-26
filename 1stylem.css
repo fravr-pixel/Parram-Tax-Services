@@ -350,6 +350,9 @@ a:has(.start) {
     margin-top: -50%;
     margin-left: 0;
   }
+  .getintouch{
+    margin-top:20px;
+  }
   .form {
     
     width: 100%;
