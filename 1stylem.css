@@ -354,5 +354,8 @@ a:has(.start) {
     
     width: 100%;
   }
+  .contact-img{
+    display:none;
+  }
 }
 
