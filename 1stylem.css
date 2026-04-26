@@ -351,8 +351,7 @@ a:has(.start) {
     margin-left: 0;
   }
   .form {
-    margin-right: 0;
-    margin-left: 0;
+    
     width: 100%;
   }
 }
