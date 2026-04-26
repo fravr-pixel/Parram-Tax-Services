@@ -339,3 +339,21 @@ a:has(.start) {
   transform: scale(0.98);
 
 }
+
+
+
+/*----------------------adding new--------------------------------------------*/
+
+@media (max-width: 600px) {
+  .contact-image {
+    width: 100%;
+    margin-top: -50%;
+    margin-left: 0;
+  }
+  .form {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
