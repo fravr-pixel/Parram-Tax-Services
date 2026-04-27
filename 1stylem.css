@@ -349,17 +349,18 @@ a:has(.start) {
     width: 100%;
     margin-top: -50%;
     margin-left: 0;
-  }
-  .getintouch{
-    padding-top:50px;
+    visibility: hidden;
   }
   .form {
-    
+    margin-right: 0;
+    margin-left: 0;
     width: 100%;
   }
-  .contact-img{
-    display:none;
-    visibility: hidden;
+  .getintouch {
+    margin-top:20%;
+  }
+  .ca{
+    width:50px;
   }
 }
 
