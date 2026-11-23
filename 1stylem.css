@@ -622,3 +622,12 @@ a:has(.start) {
     margin-right: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 140px 0 40px;
+    box-sizing: border-box;
+  }
+}
